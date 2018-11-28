@@ -1,0 +1,2 @@
+require ('tamagotchi')
+require ('rspec')
