@@ -18,7 +18,7 @@ class Tamagotchi
     @last_update_time = time
   end
   def check_live
-    @alive = (@hunger < 1) & (@exhaustion < 1) & (@boredom < 1)
+    @alive = (@hunger < 100) & (@exhaustion < 100) & (@boredom < 100)
   end
   def rest(amount = @exhaustion)
     @exhaustion -= amount
