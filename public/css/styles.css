@@ -54,7 +54,7 @@ body {
   margin: 5px;
 }
 
-#quote a:hover {
+#quote a {
   color: inherit;
   text-decoration: none;
 }
