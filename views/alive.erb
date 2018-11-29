@@ -1,16 +1,20 @@
-<p>Name: <%= @tamagotchi.name %></p>
-<p>Hunger: <%= @tamagotchi.hunger %></p>
-<p>Exhaustion: <%= @tamagotchi.exhaustion %></p>
-<p>Boredom: <%= @tamagotchi.boredom %></p>
+<div id="game-field">
 
-<form class="perform_action" action="/feed" method="post">
-  <button type="submit" name="feed" id="feed">Feed</button>
-</form>
+  <p class="tama-info">Name: <%= @tamagotchi.name %></p>
+  <p class="tama-info">Hunger: <%= (@tamagotchi.hunger).round(1) %></p>
+  <p class="tama-info">Exhaustion: <%= (@tamagotchi.exhaustion).round(1) %></p>
+  <p class="tama-info">Boredom: <%= (@tamagotchi.boredom).round(1) %></p>
 
-<form class="perform_action" action="/rest" method="post">
-  <button type="submit" name="rest" id="rest">Rest</button>
-</form>
+  <form class="perform_action" action="/feed" method="post">
+    <button type="submit" name="feed" id="feed">Feed</button>
+  </form>
 
-<form class="perform_action" action="/play" method="post">
-  <button type="submit" name="play" id="play">Play</button>
-</form>
+  <form class="perform_action" action="/rest" method="post">
+    <button type="submit" name="rest" id="rest">Rest</button>
+  </form>
+
+  <form class="perform_action" action="/play" method="post">
+    <button type="submit" name="play" id="play">Play</button>
+  </form>
+
+</div>

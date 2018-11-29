@@ -1,0 +1,64 @@
+body {
+  background-image: repeating-radial-gradient(lightyellow, darkgreen);
+  background-size: 100%;
+  background-attachment: fixed;
+}
+
+#game-field {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tama-info {
+  font-size: 30px;
+}
+
+.perform_action {
+  float: left;
+}
+
+.basic-screen {
+  font-size: 25px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.perform_action button {
+  font-size: 20px;
+  margin: 3px;
+}
+
+.basic-screen button {
+  font-size: 20px;
+  margin-left: 5px;
+}
+
+.basic-screen input {
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.basic-screen label {
+  margin-right: 5px;
+}
+
+#quote {
+  display: none;
+  margin: 5px;
+}
+
+#quote a:hover {
+  color: inherit;
+  text-decoration: none;
+}
+
+#return-home:hover #quote {
+  display: contents;
+}
